@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap');
+
+body {
+  max-width: 1300px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 46px 0px 46px 0px;
+  color: #313336;
+}
+.Filters {
+  border: 1.4px solid #a5a5a596;
+  height: fit-content;
+  border-radius: 4px;
+  padding-left: 1rem;
+  padding: 1.6rem;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+.Filters ion-icon {
+  font-size: 1.4rem;
+}
+
+.search {
+  width: auto;
+}
+
+.icon_filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content {
+  padding: 16px;
+}
+.car_shop {
+  padding: 0;
+  border: solid 1px #C7C7C7; 
+  border-radius: 4px;
+}
+
+.car_shop:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.details {
+  background-color: #c4c4c460;
+  border-radius: 0.4rem;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: -1rem;
+}
+
+.favorite {
+  fill: #c4c4c4b9;
+
+  border: #c4c4c4 solid 1px;
+  border-radius: 50%;
+  padding: 0.4rem;
+
+}
+
+.options {
+  font-size: 1rem;
+}
+
+.favorite:active {
+  cursor: pointer;
+  /* fill: #F89F1C; */
+}
+
+.favorite-active {
+  fill: #f89f1c;
+}
+
+.search {
+  color: #2e2e2e;
+  outline: none;
+  border: #a5a5a5 1px solid;
+  border-radius: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 0.4rem;
+  width: 40%;
+}
+
+.img_relativ {
+  position: relative;
+}
+
+.km {
+  position: absolute;
+  font-family: sans-serif;
+  background-color: #ffff;
+  border-radius: 0.7rem;
+  padding: 0.2rem;
+  font-weight: bold;
+  font-size: 13px;
+  left: 8px;
+  top: 8px;
+}
+
+.bullet {
+  background-color: dodgerblue;
+  border-radius: 100%;
+  padding-left: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+
+.soldCar{
+  opacity: 60%;
+}
+
+.soldCar:hover{
+  transform: none;
+  transition: none;
+}
+
+
+.figure-img {
+  margin-bottom: 0;
+}
+.img-fluid{
+  width: 100%;
+  height: 189px;
+  object-fit: cover;
+}
+
+.ruler{
+  background-color: #f89f1c;
+  width: 55px;
+  height: 2px;
+  margin: 15px 0px;
+}
+
+.car-price{
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.energyTabel{
+  width: 90px;
+}
+
