@@ -3,20 +3,23 @@
 body {
   max-width: 1300px;
   margin: auto;
+  background-color: white;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 46px 0px 46px 0px;
+  padding: 43px 0px 43px 0px;
   color: #313336;
+  margin: 0;
 }
 .Filters {
-  border: 1.4px solid #a5a5a596;
+  width: 380px;
+  min-height: 330px;
+  border: 1px solid #CACBCD;
   height: fit-content;
   border-radius: 4px;
-  padding-left: 1rem;
-  padding: 1.6rem;
+  padding: 24px;
   font-size: 1.2rem;
   color: #2e2e2e;
   display: flex;
@@ -27,9 +30,9 @@ h1 {
   font-size: 1.4rem;
 }
 
-.search {
+/* .search {
   width: auto;
-}
+} */
 
 .icon_filters {
   display: flex;
@@ -37,7 +40,15 @@ h1 {
   align-items: center;
   gap: 0.5rem;
 }
+.bg-body {
+  max-width: 254px;
+  max-height: 714px;
+  margin-bottom: 16px;
+}
 
+.block {
+  padding: 0;
+}
 .content {
   padding: 16px;
 }
@@ -53,14 +64,32 @@ h1 {
 }
 
 .details {
-  background-color: #c4c4c460;
-  border-radius: 0.4rem;
-  padding: 6px;
+  background-color: #F2F2F2;
+  border-radius: 2px;
+  padding: 8px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+
 }
 
+.green-icon{
+    width: 30%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.energyTabel{
+  width: 60px;
+}
+.car-details{
+  width: 70%;
+  padding: 0;
+}
+
+.all-web {
+  padding-left: 31px;
+}
 label {
   font-weight: bold;
   margin-bottom: -1rem;
@@ -68,11 +97,9 @@ label {
 
 .favorite {
   fill: #c4c4c4b9;
-
   border: #c4c4c4 solid 1px;
   border-radius: 50%;
   padding: 0.4rem;
-
 }
 
 .options {
@@ -81,7 +108,6 @@ label {
 
 .favorite:active {
   cursor: pointer;
-  /* fill: #F89F1C; */
 }
 
 .favorite-active {
@@ -89,16 +115,15 @@ label {
 }
 
 .search {
-  color: #2e2e2e;
-  outline: none;
-  border: #a5a5a5 1px solid;
+  color: #949494;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Hind';
+  border: #CACBCD 1px solid;
   border-radius: 0.1rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  margin: 0.4rem;
-  width: 40%;
+  padding: 10px 16px 10px 16px;
+  width: 100%;
+  margin-top: 16px;
 }
 
 .img_relativ {
@@ -148,15 +173,111 @@ button {
   background-color: #f89f1c;
   width: 55px;
   height: 2px;
-  margin: 15px 0px;
+  margin: 16px 0px;
 }
 
 .car-price{
   font-weight: 700;
   line-height: 22px;
+  padding-bottom: 0;
 }
 
-.energyTabel{
-  width: 90px;
+
+
+@media (min-width: 768px){
+.col-md-9 {
+    flex: 0 0 auto;
+    width: 60%;
+}
 }
 
+.row{
+    --bs-gutter-x: 16px;
+}
+
+@media (min-width: 1200px){
+.h3, h3 {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #2E2E2E;
+}
+}
+
+h6 {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  color: #616161;
+}
+
+p {
+font-family: 'Montserrat' sans-serif;
+font-size: 12px;
+color: #616161;
+margin-bottom: 0;
+line-height: 16px;
+}
+
+h4 {
+font-family: 'Montserrat';
+font-size: 20px;
+}
+
+h6:nth-child(1)
+{
+font-family: 'Hind', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+color: #2E2E2E;
+}
+
+h6:nth-child(2)
+{
+font-weight: 400;
+font-size: 12px;
+color: #2E2E2E;
+}
+
+.m-3 {
+  margin: 0!important;
+}
+
+hr {
+  color: #aca5a5;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.filter-titles h2{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 16px;
+margin: 0;
+}
+
+.filter-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  
+}
+
+.btn {
+  font-family: 'Hind';
+  font-weight: 400;
+ font-size: 14px;
+ padding: 8px;
+ width: 100%;
+ padding: 16px 8px 16px;
+}
+.btnMiles {
+border: 1px solid #CACBCD;
+border-radius: 4px;
+}
+
+.btnKm {
+background: #313336;
+color: white;
+border: 1px solid #313336;
+border-radius: 4px;
+}

@@ -107,27 +107,29 @@ function showCars(cars) {
       
       allWebInnerHtmlStr += `
     
-      <div class="col-12 col-sm-6 col-md-4"  id="${car.id}" >
+      <div class="blockcol-12 col-sm-6 col-md-4"  id="${car.id}" >
       
-        <div class="mb-5 bg-body car_shop ${car.status=="SOLD"?"soldCar":""}"> 
+        <div class= "bg-body car_shop ${car.status=="SOLD"?"soldCar":""}"> 
         <figure class="figure img_relativ w-100 mb-0">
         <p class="km"><span class="bullet"></span><span class='kmMi'> Km </span><span class='kmMi-value'>${car?.isKm0?"0":car.km}</span></p>
         <img src="${car.image}" class="figure-img img-fluid" alt="...">
         </figure>
         <div class="content">
         <h3>${car.make}</h3>
-        <p class="mb-0">${car.model}</p>
+        <h6 class="mb-0">${car.model}</h6>
         <div class="ruler"></div>
-          <div class=""> A partire da</div>
-          <h4 class="d-flex justify-content-between car-price" >€ ${car.price}<ion-icon class='favorite ${favorites.includes(car.id)?"favorite-active":""}' id="fav-${car.id}" onclick="addFavorite(${car.id})" name="heart"></ion-icon></h4> 
+          <p>A partire da</p>
+          <h4 class="d-flex justify-content-between car-price" >€ ${car.price}
+          <ion-icon class='favorite ${favorites.includes(car.id)?"favorite-active":""}' id="fav-${car.id}" 
+          onclick="addFavorite(${car.id})" name="heart"></ion-icon></h4> 
           <div>
-      <div class="details">
-      <div>
-          <strong>${car?.registrationYear ? car?.registrationYear +"-":""}  <span class='km_or_miles'>${car?.isKm0?0:car.km}</span>- Electro</strong>
-          <p class="car-specs">Cons.Comb. Carburante: ${car.homologationStandard.wltp.consumption.combined} ${car.homologationStandard.wltp.consumption.unitOfMeasure} - ${car.co2}: 147 g/km </p>
+      <div class="row details">
+      <div class="car-details"> 
+          <h6>${car?.registrationYear ? car?.registrationYear +"-":""}  <span class='km_or_miles'>${car?.isKm0?0:car.km}</span>- Electro</h6>
+          <h6 class="car-specs">Cons.Comb. Carburante: ${car.homologationStandard.wltp.consumption.combined} ${car.homologationStandard.wltp.consumption.unitOfMeasure} - ${car.co2}: 147 g/km </h6>
           </div>
-          <div>
-         <img class="energyTabel" src="./assets/a+.png" >
+          <div class="green-icon">
+          <img class="energyTabel" src="./assets/a+.png" >
          </div>
           </div>
           </div>

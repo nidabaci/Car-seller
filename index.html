@@ -16,32 +16,33 @@
 </head>
 <body>
     <h1>Search Page </h1>
-    <section class="row m-3">
+    <section class="row">
         <!-- FILTER SECTION -->
-        <div class="col-12 col-md-3 px-2">
-          <div class="Filters mb-4">
+        <div class="col-12 col-md-3">
+          <div class="Filters filter-titles">
             <div class="icon_filters">
               <ion-icon name="options-outline" class="options"></ion-icon>
-              <span>
-                <b>Filters</b>
+                <h2>Filters</h2>
               </span>
             </div>
             <div class="filter-geo">
-              <label for="search">Search</label>
+                <hr>
+              <label for="search"><h2>Search</h2></label>
               <br>
-              <input type="text" class="search">
+              <input type="text" class="search" placeholder="Search here">
             </div>
+            <hr>
             <p>
-              <b>Unit of measure</b>
+              <h2>Unit of measure</h2>
             </p>
-            <div>
-              <button type="button" class="btn btn-outline-secondary btnMiles">Miles</button>
-              <button type="button" class="btn btn-outline-secondary btnKm">Km</button>
+            <div class="filter-buttons">
+              <button type="button" class="btn btnMiles">Miles</button>
+              <button type="button" class="btn btnKm">Km</button>
             </div>
           </div>
         </div>
         <!-- CAR SECTION -->
-        <section class="col-12 col-md-9 p-0">
+        <section class="col-12 col-md-6">
           <div class="all-web row "></div>
         </section>
       </section>
