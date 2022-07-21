@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap');
 
 body {
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: auto;
   background-color: white;
 }
@@ -14,8 +14,8 @@ h1 {
   margin: 0;
 }
 .Filters {
-  max-width: 380px;
-  max-height: 330px;
+  /* max-width: 380px; */
+  /* max-height: 330px; */
   border: 1px solid #CACBCD;
   height: fit-content;
   border-radius: 4px;
@@ -41,8 +41,8 @@ h1 {
   gap: 0.5rem;
 }
 .bg-body {
-  max-width: 252px;
-  max-height: 714px;
+  /* max-width: 252px;
+  max-height: 714px; */
   margin-bottom: 16px;
 }
 
@@ -88,7 +88,7 @@ h1 {
 }
 
 .all-web {
-  padding-left: 31px;
+  /* padding-left: 31px; */
 }
 label {
   font-weight: bold;
@@ -193,6 +193,7 @@ label {
 
 .row{
     --bs-gutter-x: 16px;
+    margin: 0;
 }
 
 @media (min-width: 1200px){
@@ -281,3 +282,9 @@ color: white;
 border: 1px solid #313336;
 border-radius: 4px;
 }
+
+ @media (max-width: 768px) {
+.container {
+    max-width: 950px;
+}
+} 

@@ -44,7 +44,7 @@ async function getCars(base_url) {
 
 searchCar.addEventListener("input",(e)=>{
   if(!carsData) return
-  const searchValue=e.target.value
+  const searchValue=e.target.value.toLowerCase()
 
   const filteredCars= carsData.filter(car=>{
     return car?.make?.toLowerCase()?.includes(searchValue) 
@@ -107,7 +107,7 @@ function showCars(cars) {
       
       allWebInnerHtmlStr += `
     
-      <div class="blockcol-12 col-sm-6 col-md-4"  id="${car.id}" >
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="${car.id}" >
       
         <div class= "bg-body car_shop ${car.status=="SOLD"?"soldCar":""}"> 
         <figure class="figure img_relativ w-100 mb-0">
