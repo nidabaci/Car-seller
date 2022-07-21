@@ -68,7 +68,7 @@ function showCars(cars) {
     cars.forEach((car) => {
         allWebInnerHtmlStr += `
         <div class="col-sm-12 col-md-6 col-lg-4" id="${car.id}">
-        <div class="bg-body car_shop ${car.status==" SOLD"?"soldCar":""}">
+        <div class="bg-body car_shop ${car.status=="SOLD"?"soldCar":""}">
           <figure class="figure img_relativ w-100 mb-0">
             <p class="km">
               <span class="bullet"></span>
