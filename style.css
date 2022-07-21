@@ -14,8 +14,8 @@ h1 {
   margin: 0;
 }
 .Filters {
-  width: 380px;
-  min-height: 330px;
+  max-width: 380px;
+  max-height: 330px;
   border: 1px solid #CACBCD;
   height: fit-content;
   border-radius: 4px;
@@ -41,7 +41,7 @@ h1 {
   gap: 0.5rem;
 }
 .bg-body {
-  max-width: 254px;
+  max-width: 252px;
   max-height: 714px;
   margin-bottom: 16px;
 }
