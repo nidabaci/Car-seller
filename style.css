@@ -283,8 +283,14 @@ border: 1px solid #313336;
 border-radius: 4px;
 }
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 .container {
-    max-width: 950px;
+    max-width: 400px;
+ }
+ .Filters {
+  margin-bottom: 20px;
+ }
+ .row>*{
+  padding: 0;
+ }
 }
-} 
