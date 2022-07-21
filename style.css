@@ -1,239 +1,296 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap');
- body {
-     margin: auto;
-     background-color: white;
+
+body {
+
+  margin: auto;
+  background-color: white;
 }
- h1 {
-     font-family: 'Montserrat', sans-serif;
-     text-align: center;
-     padding: 43px 0px 43px 0px;
-     color: #313336;
-     margin: 0;
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 43px 0px 43px 0px;
+  color: #313336;
+  margin: 0;
 }
+.Filters {
+  /* max-width: 380px; */
+  /* max-height: 330px; */
+  border: 1px solid #CACBCD;
+  height: fit-content;
+  border-radius: 4px;
+  padding: 24px;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+.Filters ion-icon {
+  font-size: 1.4rem;
+}
+
+/* .search {
+  width: auto;
+} */
+
+.icon_filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bg-body {
+  /* max-width: 252px;
+  max-height: 714px; */
+  margin-bottom: 16px;
+}
+
+.block {
+  padding: 0;
+}
+.content {
+  padding: 16px;
+}
+.car_shop {
+  padding: 0;
+  border: solid 1px #C7C7C7; 
+  border-radius: 4px;
+}
+
+.car_shop:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.details {
+  background-color: #F2F2F2;
+  border-radius: 2px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.green-icon{
+    width: 30%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.energyTabel{
+  width: 60px;
+}
+.car-details{
+  width: 70%;
+  padding: 0;
+}
+
+.all-web {
+  /* padding-left: 31px; */
+}
+label {
+  font-weight: bold;
+  margin-bottom: -1rem;
+}
+
+.favorite {
+  fill: #c4c4c4b9;
+  border: #c4c4c4 solid 1px;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.options {
+  font-size: 1rem;
+}
+
+.favorite:active {
+  cursor: pointer;
+}
+
+.favorite-active {
+  fill: #f89f1c;
+}
+
+.search {
+  color: #949494;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Hind';
+  border: #CACBCD 1px solid;
+  border-radius: 0.1rem;
+  padding: 10px 16px 10px 16px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.img_relativ {
+  position: relative;
+}
+
+.km {
+  position: absolute;
+  font-family: sans-serif;
+  background-color: #ffff;
+  border-radius: 0.7rem;
+  padding: 0.2rem;
+  font-weight: bold;
+  font-size: 13px;
+  left: 8px;
+  top: 8px;
+}
+
+.bullet {
+  background-color: dodgerblue;
+  border-radius: 100%;
+  padding-left: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+
+.soldCar{
+  opacity: 60%;
+}
+
+.soldCar:hover{
+  transform: none;
+  transition: none;
+}
+
+
+.figure-img {
+  margin-bottom: 0;
+}
+.img-fluid{
+  width: 100%;
+  height: 189px;
+  object-fit: cover;
+}
+
+.ruler{
+  background-color: #f89f1c;
+  width: 55px;
+  height: 2px;
+  margin: 16px 0px;
+}
+
+.car-price{
+  font-weight: 700;
+  line-height: 22px;
+  padding-bottom: 0;
+}
+
+
+
+@media (min-width: 768px){
+.col-md-9 {
+    flex: 0 0 auto;
+    width: 60%;
+}
+}
+
+.row{
+    --bs-gutter-x: 16px;
+    margin: 0;
+}
+
+@media (min-width: 1200px){
+.h3, h3 {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #2E2E2E;
+}
+}
+
+h6 {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  color: #616161;
+}
+
+p {
+font-family: 'Montserrat' sans-serif;
+font-size: 12px;
+color: #616161;
+margin-bottom: 0;
+line-height: 16px;
+}
+
+h4 {
+font-family: 'Montserrat';
+font-size: 20px;
+}
+
+h6:nth-child(1)
+{
+font-family: 'Hind', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+color: #2E2E2E;
+}
+
+h6:nth-child(2)
+{
+font-weight: 400;
+font-size: 12px;
+color: #2E2E2E;
+}
+
+.m-3 {
+  margin: 0!important;
+}
+
+hr {
+  color: #aca5a5;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.filter-titles h2{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 16px;
+margin: 0;
+}
+
+.filter-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  
+}
+
+.btn {
+  font-family: 'Hind';
+  font-weight: 400;
+ font-size: 14px;
+ padding: 8px;
+ width: 100%;
+ padding: 16px 8px 16px;
+}
+.btnMiles {
+border: 1px solid #CACBCD;
+border-radius: 4px;
+}
+
+.btnKm {
+background: #313336;
+color: white;
+border: 1px solid #313336;
+border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+.container {
+    max-width: 400px;
+ }
  .Filters {
-     border: 1px solid #CACBCD;
-     height: fit-content;
-     border-radius: 4px;
-     padding: 24px;
-     font-size: 1.2rem;
-     color: #2e2e2e;
-     display: flex;
-     flex-direction: column;
-     font-family: 'Montserrat', sans-serif;
-}
- .Filters ion-icon {
-     font-size: 1.4rem;
-}
- .icon_filters {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     gap: 0.5rem;
-}
- .bg-body {
-     margin-bottom: 16px;
-}
- .block {
-     padding: 0;
-}
- .content {
-     padding: 16px;
-}
- .car_shop {
-     padding: 0;
-     border: solid 1px #C7C7C7;
-     border-radius: 4px;
-}
- .car_shop:hover {
-     transform: scale(1.02);
-     transition: 0.4s;
-}
- .details {
-     background-color: #F2F2F2;
-     border-radius: 2px;
-     padding: 8px;
-     display: flex;
-     flex-direction: row;
-}
- .green-icon{
-     width: 30%;
-     padding: 0;
-     display: flex;
-     align-items: center;
-}
- .energyTabel{
-     width: 60px;
-}
- .car-details{
-     width: 70%;
-     padding: 0;
-}
- label {
-     font-weight: bold;
-     margin-bottom: -1rem;
-}
- .favorite {
-     fill: #c4c4c4b9;
-     border: #c4c4c4 solid 1px;
-     border-radius: 50%;
-     padding: 0.4rem;
-}
- .options {
-     font-size: 1rem;
-}
- .favorite:active {
-     cursor: pointer;
-}
- .favorite-active {
-     fill: #f89f1c;
-}
- .search {
-     color: #949494;
-     font-weight: 400;
-     font-size: 14px;
-     font-family: 'Hind';
-     border: #CACBCD 1px solid;
-     border-radius: 0.1rem;
-     padding: 10px 16px 10px 16px;
-     width: 100%;
-     margin-top: 16px;
-}
- .img_relativ {
-     position: relative;
-}
- .km {
-     position: absolute;
-     font-family: sans-serif;
-     background-color: #ffff;
-     border-radius: 0.7rem;
-     padding: 0.2rem;
-     font-weight: bold;
-     font-size: 13px;
-     left: 8px;
-     top: 8px;
-}
- .bullet {
-     background-color: dodgerblue;
-     border-radius: 100%;
-     padding-left: 0.8rem;
-     margin-right: 0.2rem;
-}
- .soldCar{
-     opacity: 60%;
-}
- .soldCar:hover{
-     transform: none;
-     transition: none;
-}
- .figure-img {
-     margin-bottom: 0;
-}
- .img-fluid{
-     width: 100%;
-     height: 189px;
-     object-fit: cover;
-}
- .ruler{
-     background-color: #f89f1c;
-     width: 55px;
-     height: 2px;
-     margin: 16px 0px;
-}
- .car-price{
-     font-weight: 700;
-     line-height: 22px;
-     padding-bottom: 0;
-}
- @media (min-width: 768px){
-     .col-md-9 {
-         flex: 0 0 auto;
-         width: 60%;
-    }
-}
- .row{
-     --bs-gutter-x: 16px;
-     margin: 0;
-}
- @media (min-width: 1200px){
-     .h3, h3 {
-         font-size: 14px;
-         font-family: 'Montserrat';
-         color: #2E2E2E;
-    }
-}
- h6 {
-     font-family: 'Hind', sans-serif;
-     font-size: 14px;
-     color: #616161;
-}
- p {
-     font-family: 'Montserrat' sans-serif;
-     font-size: 12px;
-     color: #616161;
-     margin-bottom: 0;
-     line-height: 16px;
-}
- h4 {
-     font-family: 'Montserrat';
-     font-size: 20px;
-}
- h6:nth-child(1) {
-     font-family: 'Hind', sans-serif;
-     font-style: normal;
-     font-weight: 700;
-     font-size: 11px;
-     color: #2E2E2E;
-}
- h6:nth-child(2) {
-     font-weight: 400;
-     font-size: 12px;
-     color: #2E2E2E;
-}
- .m-3 {
-     margin: 0!important;
-}
- hr {
-     color: #aca5a5;
-     margin-top: 16px;
-     margin-bottom: 16px;
-}
- .filter-titles h2{
-     font-family: 'Montserrat';
-     font-weight: 700;
-     font-size: 16px;
-     margin: 0;
-}
- .filter-buttons {
-     margin-top: 16px;
-     display: flex;
-     gap: 8px;
-}
- .btn {
-     font-family: 'Hind';
-     font-weight: 400;
-     font-size: 14px;
-     padding: 8px;
-     width: 100%;
-     padding: 16px 8px 16px;
-}
- .btnMiles {
-     border: 1px solid #CACBCD;
-     border-radius: 4px;
-}
- .btnKm {
-     background: #313336;
-     color: white;
-     border: 1px solid #313336;
-     border-radius: 4px;
-}
- @media (max-width: 768px) {
-     .container {
-         max-width: 400px;
-    }
-     .Filters {
-         margin-bottom: 20px;
-    }
-     .row>*{
-         padding: 0;
-    }
+  margin-bottom: 20px;
+ }
+ .row>*{
+  padding: 0;
+ }
 }
